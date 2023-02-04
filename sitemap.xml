@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://https://github.com/satoshi-pes/ringo_testpage1/document/</loc>
+    <loc>https://satoshi-pes.github.io/ringo_testpage1/document/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://https://github.com/satoshi-pes/ringo_testpage1/downloads/</loc>
+    <loc>https://satoshi-pes.github.io/ringo_testpage1/downloads/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://https://github.com/satoshi-pes/ringo_testpage1/</loc>
+    <loc>https://satoshi-pes.github.io/ringo_testpage1/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://https://github.com/satoshi-pes/ringo_testpage1/readme_doc/</loc>
+    <loc>https://satoshi-pes.github.io/ringo_testpage1/readme_doc/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>https://https://github.com/satoshi-pes/ringo_testpage1/readme_en/</loc>
+    <loc>https://satoshi-pes.github.io/ringo_testpage1/readme_en/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>https://https://github.com/satoshi-pes/ringo_testpage1/categories/</loc>
+    <loc>https://satoshi-pes.github.io/ringo_testpage1/categories/</loc>
   </url><url>
-    <loc>https://https://github.com/satoshi-pes/ringo_testpage1/tags/</loc>
+    <loc>https://satoshi-pes.github.io/ringo_testpage1/tags/</loc>
   </url>
 </urlset>

@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on RINGO</title>
-    <link>https://https://github.com/satoshi-pes/ringo_testpage1/tags/</link>
+    <link>https://satoshi-pes.github.io/ringo_testpage1/tags/</link>
     <description>Recent content in Tags on RINGO</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://https://github.com/satoshi-pes/ringo_testpage1/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://satoshi-pes.github.io/ringo_testpage1/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

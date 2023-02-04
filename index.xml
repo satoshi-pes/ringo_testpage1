@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hello Friend on RINGO</title>
-    <link>https://https://github.com/satoshi-pes/ringo_testpage1/</link>
+    <link>https://satoshi-pes.github.io/ringo_testpage1/</link>
     <description>Recent content in Hello Friend on RINGO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://https://github.com/satoshi-pes/ringo_testpage1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://satoshi-pes.github.io/ringo_testpage1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Documentation</title>
-      <link>https://https://github.com/satoshi-pes/ringo_testpage1/document/</link>
+      <link>https://satoshi-pes.github.io/ringo_testpage1/document/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://https://github.com/satoshi-pes/ringo_testpage1/document/</guid>
+      <guid>https://satoshi-pes.github.io/ringo_testpage1/document/</guid>
       <description>RINGO: RINEX pre-processing tool using Go! RINGO is a RINEX pre-processing tool capable of handling multi-GNSS data. The software is a command line based CLI tool that works on various platforms including Windows OS, macOS, Linux, Unix.
 RINGO&amp;rsquo;s command line interface (CLI) is simple to use, but fully featured to manage daily GNSS data observed by a Continuously Operating Reference Stations (CORS) network.
 Features RINEX file editing RINEX file merging Clock jump correction Quality check Ionospheric correction Generation of interactive viewer Conversion of BINEX and RTCM binaries to RINEX files Generation of a shell completion script Installatiion Prebuilt binaries for various platforms are available on this website.</description>
@@ -531,10 +531,10 @@ $ ringo viewer --qcmode 02550010.21o &amp;gt; 02550010_21o_qc.html
     
     <item>
       <title>Downloads</title>
-      <link>https://https://github.com/satoshi-pes/ringo_testpage1/downloads/</link>
+      <link>https://satoshi-pes.github.io/ringo_testpage1/downloads/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://https://github.com/satoshi-pes/ringo_testpage1/downloads/</guid>
+      <guid>https://satoshi-pes.github.io/ringo_testpage1/downloads/</guid>
       <description>Download links Download and copy binary executable for each platform from the Download links bellow.
 ringo v0.8.5 (Windows) ringo v0.8.5 (Linux) ringo v0.8.5 (macOS) ringo v0.8.5 (UNIX) License Geospatial Information Authority of Japan Website Terms of Use (Version 2.0) [https://www.gsi.go.jp/ENGLISH/page_e30286.html] is applied to use, modification, or redistribution of the RINGO software package, except for the provision 1)-a. The user must cite the reference when the user modifies the RINGO software or combines it with other software and distributes it.</description>
       <content>&lt;h1 id=&#34;download-links&#34;&gt;Download links&lt;/h1&gt;
@@ -555,10 +555,10 @@ The user must cite the reference when the user modifies the RINGO software or co
     
     <item>
       <title></title>
-      <link>https://https://github.com/satoshi-pes/ringo_testpage1/readme_doc/</link>
+      <link>https://satoshi-pes.github.io/ringo_testpage1/readme_doc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://https://github.com/satoshi-pes/ringo_testpage1/readme_doc/</guid>
+      <guid>https://satoshi-pes.github.io/ringo_testpage1/readme_doc/</guid>
       <description>RINGO: RINEX pre-processing tool using Go! RINGO is a RINEX pre-processing tool capable of handling multi-GNSS data. The software is a command line based CLI tool that works on various platforms including Windows OS, macOS, Linux, Unix.
 RINGO&amp;rsquo;s command line interface (CLI) is simple to use, but fully featured to manage daily GNSS data observed by a Continuously Operating Reference Stations (CORS) network.
 Features RINEX file editing RINEX file merging Clock jump correction Quality check Ionospheric correction Generation of interactive viewer Conversion of BINEX and RTCM binaries to RINEX files Generation of a shell completion script Installatiion Prebuilt binaries for various platforms are available on this website.</description>
@@ -1077,10 +1077,10 @@ $ ringo viewer --qcmode 02550010.21o &amp;gt; 02550010_21o_qc.html
     
     <item>
       <title></title>
-      <link>https://https://github.com/satoshi-pes/ringo_testpage1/readme_en/</link>
+      <link>https://satoshi-pes.github.io/ringo_testpage1/readme_en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://https://github.com/satoshi-pes/ringo_testpage1/readme_en/</guid>
+      <guid>https://satoshi-pes.github.io/ringo_testpage1/readme_en/</guid>
       <description>RINGO: RINEX pre-processing tool using Go! RINGO is a CLI tool for RINEX file pre-processing. It implements several features to easily manage daily multi-GNSS data, and works on various platforms including Windows OS, macOS, Linux, and UNIX.
 (ringoのイメージ画像をここにはる)
 Developed by Satoshi Kawamoto, Naofumi Takamatsu, and Satoshi Abe @ Geospatial Information Authority of Japan.
