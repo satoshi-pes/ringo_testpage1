@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello Friend on RINGO</title>
+    <link>https://https://github.com/satoshi-pes/ringo_testpage1/</link>
+    <description>Recent content in Hello Friend on RINGO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://https://github.com/satoshi-pes/ringo_testpage1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Documentation</title>
+      <link>https://https://github.com/satoshi-pes/ringo_testpage1/document/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://https://github.com/satoshi-pes/ringo_testpage1/document/</guid>
+      <description>RINGO: RINEX pre-processing tool using Go! RINGO is a RINEX pre-processing tool capable of handling multi-GNSS data. The software is a command line based CLI tool that works on various platforms including Windows OS, macOS, Linux, Unix.
+RINGO&amp;rsquo;s command line interface (CLI) is simple to use, but fully featured to manage daily GNSS data observed by a Continuously Operating Reference Stations (CORS) network.
+Features RINEX file editing RINEX file merging Clock jump correction Quality check Ionospheric correction Generation of interactive viewer Conversion of BINEX and RTCM binaries to RINEX files Generation of a shell completion script Installatiion Prebuilt binaries for various platforms are available on this website.</description>
+      <content>&lt;h1 id=&#34;ringo-rinex-pre-processing-tool-using-go&#34;&gt;RINGO: RINEX pre-processing tool using Go!&lt;/h1&gt;
+&lt;p&gt;RINGO is a RINEX pre-processing tool capable of handling multi-GNSS data. The software is a command line based CLI tool that works on various platforms including Windows OS, macOS, Linux, Unix.&lt;/p&gt;
+&lt;p&gt;RINGO&amp;rsquo;s command line interface (CLI) is simple to use, but fully featured to manage daily GNSS data observed by a Continuously Operating Reference Stations (CORS) network.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;RINEX file editing&lt;/li&gt;
+&lt;li&gt;RINEX file merging&lt;/li&gt;
+&lt;li&gt;Clock jump correction&lt;/li&gt;
+&lt;li&gt;Quality check&lt;/li&gt;
+&lt;li&gt;Ionospheric correction&lt;/li&gt;
+&lt;li&gt;Generation of interactive viewer&lt;/li&gt;
+&lt;li&gt;Conversion of BINEX and RTCM binaries to RINEX files&lt;/li&gt;
+&lt;li&gt;Generation of a shell completion script&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installatiion&#34;&gt;Installatiion&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;Prebuilt binaries for various platforms are available on this website.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the latest release of the RINGO software from the &lt;a href=&#34;https://terras.gsi.go.jp/software/ringo.html&#34;&gt;download page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Copy the binary executable suitable to your operating system to your desired directory&lt;/li&gt;
+&lt;li&gt;Add the directory to the PATH environment variable&lt;/li&gt;
+&lt;li&gt;Add the permission to the installed executable, i.e.:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ chmod +x ringo
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;supported-platforms&#34;&gt;Supported Platforms&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;Currently supports Windows OS, macOS, Linux, UNIX (FreeBSD, OpenBSD, NetBSD, Solaris).&lt;/p&gt;
+&lt;h2 id=&#34;supported-formats&#34;&gt;Supported formats&lt;/h2&gt;
+&lt;hr&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;file format&lt;/th&gt;
+&lt;th&gt;version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;RINEX&lt;/td&gt;
+&lt;td&gt;2.00*, 2.10, 2.11, 2.12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;3.00, 3.01, 3.02, 3.03, 3.04, 3.05&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;4.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;* Currently official RINEX version 2.00 document is not available from IGS, so RINGO support for RINEX version 2.00 may not be maintained.&lt;/p&gt;
+&lt;h3 id=&#34;supported-formats-only-for-data-conversion&#34;&gt;Supported formats only for data conversion:&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;file format&lt;/th&gt;
+&lt;th&gt;record types&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;BINEX&lt;/td&gt;
+&lt;td&gt;0x7f: GNSS observables&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0x01-0x01: GPS ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0x01-0x02: GLO ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0x01-0x03: SBAS ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0x01-0x06: QZS ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0x01-0x14: GAL ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;file format&lt;/th&gt;
+&lt;th&gt;record types&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;RTCM&lt;/td&gt;
+&lt;td&gt;MSM7 (1077, 1087, 1097, 1117): GNSS observation data&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1019: GPS ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1020: GLO ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1044: QZS ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1046: GAL ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;test-installation&#34;&gt;Test installation&lt;/h3&gt;
+&lt;p&gt;You can test your installation by version command:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then you will see like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo
+RINEX file pre-processing tool using Go.
+
+ringo is a program for editing, pre-processing, and quality checking RINEX files,
+also includes features such as conversion from BINEX or RTCM to RINEX format, interactive viewer etc.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;interface&#34;&gt;Interface&lt;/h3&gt;
+&lt;p&gt;RINGO is a CLI tool that provides several sub-commands. Basic interface is as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo [sub-command] [flags] inputfiles &amp;gt; outputfile
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;RINGO reads all inputfiles that are given in arguments, and print data to the standard output. The basic usage is to specify input files as command line arguments and redirect it to an output file.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge rinex1 rinex2 &amp;gt; rinex_merged
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or you can use the option &amp;ldquo;-o&amp;rdquo; to specify the output file as a command line argument.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge rinex1 rinex2 -o rinex_merged
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;See the help for each sub-command to see the full set of options available.&lt;/p&gt;
+&lt;h3 id=&#34;input-file&#34;&gt;Input file&lt;/h3&gt;
+&lt;p&gt;The inputfiles can be any of RINEX observation file, RINEX navigation file, IGS IONEX file. The file format is automatically identified from the file header.&lt;br&gt;
+The direct reading of compressed file is also supported. Acceptable formats are &amp;ldquo;compress&amp;rdquo;, &amp;ldquo;zip&amp;rdquo;, &amp;ldquo;gzip&amp;rdquo;, &amp;ldquo;bzip2&amp;rdquo; for all file format, and tar archived navigation file is also supported.
+Furthermore, hatanaka compressed file can also be accepted if &amp;ldquo;CRX2RNX&amp;rdquo; command is available in &lt;em&gt;PATH&lt;/em&gt;.&lt;br&gt;
+For example:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge rinex_obs1.o rinex_obs2.o.gz &amp;gt; rinex_merged
+$ ringo merge rinex_obs1.o rinex_obs2.d    &amp;gt; rinex_merged
+$ ringo merge rinex_nav.tar.bz2            &amp;gt; rinex_nav.p
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;show-commands-available&#34;&gt;Show commands available&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo help
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;shows&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.....
+Usage:
+  ringo [command]
+
+Available Commands:
+  bingo       Convert a BINEX file to RINEX files
+  clkcorr     Correct obs rinex by timetag smoothing
+  completion  Generate the autocompletion script for the specified shell
+  genconf     Generate a default conf file
+  help        Help about any command
+  ioncorr     Correct ionospheric delay of rinex obs file
+  merge       Merge observation or navigation RINEX files
+  qc          Quality check of a rinex obs file
+  rtcmgo      Convert a RTCM3 file to RINEX files
+  shiftcorr   Correct quarter cycle phase shift
+  version     Show version
+  viewer      Generate a HTML5-based viewer
+
+.....
+Use &amp;#34;ringo [command] --help&amp;#34; for more information about a command.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The helps for each sub-command can also be also displayed by:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo [command] --help
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For example,&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo bingo --help
+Convert a BINEX file to RINEX files
+        Currently supports 0x01 ephemerides and 0x7f-05 observations.
+
+Example:
+
+  convert a BINEX file to RINEX obs and nav files.
+  &amp;gt;&amp;gt; ringo bingo --outobs rinexobs --outnav rinexnav binex
+  .....
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;command-references&#34;&gt;Command references&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ringo&#34;&gt;ringo&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;ringo&lt;/em&gt; is the main command of the RINGO software, and each sub-command is invoked by passing the command in the first argument. There are two types of flags: global flags and command options. The global flags are commonly used for all sub-commands, and the command options are defined for each-command.&lt;/p&gt;
+&lt;h3 id=&#34;global-flags&#34;&gt;global flags&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Flag&lt;/th&gt;
+&lt;th&gt;Shorthand&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;config&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;use a config file (default is $HOME/.ringo.yaml)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;debug&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;enable debug print to stderr [default: false]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;help&lt;/td&gt;
+&lt;td&gt;-h&lt;/td&gt;
+&lt;td&gt;show help for ringo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;etime&lt;/td&gt;
+&lt;td&gt;-e&lt;/td&gt;
+&lt;td&gt;end of time window (e.g. &amp;lsquo;2017/01/01 15:00:00&amp;rsquo;) (default &amp;ldquo;2099/12/31 23:59:59&amp;rdquo;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;stime&lt;/td&gt;
+&lt;td&gt;-s&lt;/td&gt;
+&lt;td&gt;start of time window (e.g. &amp;lsquo;2017/01/01 03:00:00&amp;rsquo;) (default &amp;ldquo;1980/01/06 00:00:00&amp;rdquo;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;exclPRN&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;list of PRN to exclude (e.g. &amp;lsquo;G01,G02&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;exclSat&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;list of satsys to exclude (e.g. &amp;lsquo;G&amp;rsquo;, &amp;lsquo;REJ&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;inclPRN&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;list of PRN to include (e.g. &amp;lsquo;G01,G02&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;inclSat&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;list of satsys to include (e.g. &amp;lsquo;G&amp;rsquo;, &amp;lsquo;REJ&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;interval&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;time interval to output (seconds)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;outfile&lt;/td&gt;
+&lt;td&gt;-o&lt;/td&gt;
+&lt;td&gt;output file [default: STDOUT]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;outver&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;RINEX version to output, e.g., &amp;lsquo;4.00&amp;rsquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;sort&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;sort timetag and PRN [default: false]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;toggle&lt;/td&gt;
+&lt;td&gt;-t&lt;/td&gt;
+&lt;td&gt;help message for toggle&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;verbose&lt;/td&gt;
+&lt;td&gt;-v&lt;/td&gt;
+&lt;td&gt;enable verbose print to stderr [default: false]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;version&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;show version for ringo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;merge&#34;&gt;merge&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;merge&lt;/em&gt; merges and edits RINEX observation and navigation files. It offers basic editing features for RINEX files, including clipping, sorting, editing header, change of observation types.&lt;/p&gt;
+&lt;p&gt;The header contents of the merged file basically follow the header contents of the first file appeared in the argument. However, some header contents are automatically modified according to the contents of the merged file.&lt;/p&gt;
+&lt;p&gt;The header contents listed below are modified after merge multiple files.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Header label&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;VERSION&lt;/td&gt;
+&lt;td&gt;The output version will be the same as the version of the first file unless you choose otherwise in the option&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TIME OF FIRST OBS&lt;/td&gt;
+&lt;td&gt;automatically modified according to the data period of the merged file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TIME OF LAST OBS&lt;/td&gt;
+&lt;td&gt;automatically modified according to the data period of the merged file. Note that the &amp;ldquo;TIME OF LAST OBS&amp;rdquo; is an optional, but RINGO always outputs this header.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;INTERVAL&lt;/td&gt;
+&lt;td&gt;automatically modified according to the data interval. Currently RINGO determines the interval as the most frequently occurred time interval in the merged file.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# / TYPES OF OBSERV&lt;/td&gt;
+&lt;td&gt;The obstypes will change according to the contents of the file contents after the merge.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SYS / # / OBS TYPES&lt;/td&gt;
+&lt;td&gt;Same as the &amp;ldquo;# / TYPES OF OBSERV&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;options&#34;&gt;options&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Flag&lt;/th&gt;
+&lt;th&gt;Shorthand&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;obstypes&lt;/td&gt;
+&lt;td&gt;-t&lt;/td&gt;
+&lt;td&gt;mask of obscodes (e.g. &amp;lsquo;C1C,L1C,L2X&amp;amp;R:S1C,C1P&amp;amp;E:L5X&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;help&lt;/td&gt;
+&lt;td&gt;-h&lt;/td&gt;
+&lt;td&gt;show help for merge&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.add-new-record&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;add new optional headers if possible&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.agency string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set agency&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.ante string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set antenna dE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.anth string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set antenna dH&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.antn string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set antenna dN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.antnum string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set antenna number&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.anttype string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set antenna type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.aprx string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set approximate pos x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.apry string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set approximate pos y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.aprz string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set approximate pos z&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.doi string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set DOI for data citation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.license string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set License (separator &amp;lsquo;;&amp;rsquo; for multiple lines)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.mname string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set monument name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.mtype string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set monument type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.no-inpfiles&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;do not show input files in the header&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.observer string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set observer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.recnum string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set receiver number&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.rectype string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set receiver type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.recver string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set receiver version&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.stainfo string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set Station Information (&amp;rsquo;;&amp;rsquo; for multiple lines)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+&lt;p&gt;File merge&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge 02550010.21o 02550020.21o &amp;gt; 02550010_merged.21o
+$ ringo merge 025500[12]0.21o           &amp;gt; 02550010_merged.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Extraction of compressed file is possible.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge 02550010.21o.gz           &amp;gt; 02550010.21o
+$ ringo merge 02550010.21o.bz2          &amp;gt; 02550010.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Hatanaka compressed file can also be extracted if &amp;ldquo;CRX2RNX&amp;rdquo; is available in the $PATH.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge 02550010.21d.gz           &amp;gt; 02550010.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Creation of merged navigation file&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge ????0010.21n              &amp;gt; merg0010.21n
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Merge of tar archived navigation file provided by GSI&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge 02550010.21N.tar.gz       &amp;gt; 02550010.21p
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Set header to the file&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge 02550010.21d.gz --h.agency GSI  --h.observer Kawamoto &amp;gt; 02550010.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Clip the data between &amp;ldquo;2021/01/01 01:00:00&amp;rdquo; and &amp;ldquo;2021/01/01 02:00:00&amp;rdquo;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --stime &amp;#34;2021/01/01 01:00:00&amp;#34; --etime &amp;#34;2021/01/01 02:00:00&amp;#34; 02550010.21o &amp;gt; 02550010_clip.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Crop the data of L1 and L2 only.&lt;br&gt;
+The observation types can be specified by a comma separated string.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --obstypes &amp;#34;L1,L2&amp;#34; 02550010.21o &amp;gt; 02550010_l1l2.21o 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Clipping to the L1C data only, but only GPS clipping to L2X and L5X.&lt;br&gt;
+The observation types can be set for each satellite system individually. The setting for each satellite system can be specified by starting one of the character &amp;ldquo;GRJECS&amp;rdquo;. The settings can be combined with &amp;ldquo;&amp;amp;&amp;rdquo;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --obstypes &amp;#34;L1C&amp;amp;G:L2X,L5X&amp;#34; 02550010.21o &amp;gt; 02550010_m.21o 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Clip to data containing only specific satellite systems. The satellite systems can be a combination of &amp;ldquo;GRJECS&amp;rdquo;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --inclSat &amp;#34;G&amp;#34; 02550010.21o &amp;gt; 02550010_G.21o   # GPS only file
+$ ringo merge --inclSat &amp;#34;GJ&amp;#34; 02550010.21o &amp;gt; 02550010_GJ.21o   # GPS and QZSS
+$ ringo merge --exclSat &amp;#34;G&amp;#34; 02550010.21o &amp;gt; 02550010_noGPS.21o   # no GPS 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Clip to data containing only specific satellites. The satellites can be a comma separated string with viecle IDs.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --inclPRN &amp;#34;G01,G02&amp;#34; 02550010.21o &amp;gt; 02550010_G01G02.21o  # only G01 and G02  
+$ ringo merge --exclPRN &amp;#34;G01,G02&amp;#34; 02550010.21o &amp;gt; 02550010_G01G02.21o  # without G01 and G02
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the data interval by thinning out the data. The data interval can be set in seconds.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --interval 60  02550010.21o &amp;gt; 02550010_60s.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Sorting of the data is also possible&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --sort 02550010.21o &amp;gt; 02550010_sorted.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then the sorted file looks like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; 2021 01 01 00 00  0.0000000  0 31
+G05  21697284.266   114019997.871 7     -2085.000          46.700    21697290.6094   88846772.50546     -1624.6764
+G13  20934053.969   110009159.077 8     -1751.844          49.100    20934059.5314   85721462.52546     -1365.0704
+G14  24505154.219   128775502.796 6       613.117          39.200    24505160.5594  100344544.64143       477.7544
+G15  20366192.609   107025043.761 8       544.027          51.300    20366198.4884   83396175.49049       423.9184
+G18  21709562.883   114084519.671 7      1345.543          44.600    21709568.6414   88897037.58246      1048.4774
+G20  23553429.875   123774104.162 6      3244.309          38.400    23553435.1254   96447392.24343      2528.0314
+G23  23850618.016   125335843.457 6      3100.906          39.800    23850624.1374   97664324.07344      2416.2894
+G24  21628936.797   113660828.469 7      3088.203          44.900    21628945.8284   88566938.42948      2406.3914
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;qc&#34;&gt;qc&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;qc&lt;/em&gt; checks the quality of RINEX observation file. It summarizes the total number of epochs, the number of obsevation data, number of observations for each signal, multipath noise, cycle slips, etc.&lt;/p&gt;
+&lt;h3 id=&#34;examples-1&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo qc 02550010.21o 02550010.21n &amp;gt; qc.log
+$ ringo qc 02550010.21d.gz 02550010.21N.tar.gz &amp;gt; qc.log
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;clkcorr&#34;&gt;clkcorr&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;clkcorr&lt;/em&gt; corrects clock jump events in RINEX files. In default, the output file is aligned to regulary spaced timetags by correcting clock jumps. This behavior is similar to the &amp;ldquo;-smtt&amp;rdquo; by the teqc software. Optionally the output file can be switched to a smoothed range data. Then the msec clock jumps could be accumulated on the timetags.&lt;/p&gt;
+&lt;h3 id=&#34;examples-2&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo clkcorr        XXXXXXXX.XXo  &amp;gt;  timetagsmoothed_RINEX
+$ ringo clkcorr --smpr XXXXXXXX.XXo  &amp;gt;  rangesmoothed_RINEX
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;ioncorr&#34;&gt;ioncorr&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;ioncorr&lt;/em&gt; corrects ionospheric effects on GNSS signals. The 1st- and 2nd-orders of ionospheric corrections are implemented in RINGO &lt;em&gt;ioncorr&lt;/em&gt;. The 2nd-order correction requires IONEX file provided by IGS.&lt;/p&gt;
+&lt;h3 id=&#34;examples-3&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo ioncorr -1    02550010.21o              &amp;gt; 02550010_1.21o
+$ ringo ioncorr -1 -2 02550010.21o igsg0010.21i &amp;gt; 02550010_12.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;viewer&#34;&gt;viewer&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;viewer&lt;/em&gt; generates a HTML5-based interactive viewer for RINEX observation file and quality check result.&lt;/p&gt;
+&lt;h3 id=&#34;examples-4&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo viewer          02550010.21o &amp;gt; 02550010_21o.html
+$ ringo viewer --qcmode 02550010.21o &amp;gt; 02550010_21o_qc.html
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;bingo&#34;&gt;bingo&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;bingo&lt;/em&gt; converts a BINEX file to RINEX observation and navigation files.&lt;/p&gt;
+&lt;h3 id=&#34;examples-5&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo bingo 02550010_21.bnx --outobs 02550010.21o --outnav 02550010.21p
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;rtcmgo&#34;&gt;rtcmgo&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;rtcmgo&lt;/em&gt; converts a RTCM file to RINEX observation and navigation files.&lt;/p&gt;
+&lt;h3 id=&#34;examples-6&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo rtcmgo 02550010_21.rtcm --outobs 02550010.21o --outnav 02550010.21p
+&lt;/code&gt;&lt;/pre&gt;</content>
+    </item>
+    
+    <item>
+      <title>Downloads</title>
+      <link>https://https://github.com/satoshi-pes/ringo_testpage1/downloads/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://https://github.com/satoshi-pes/ringo_testpage1/downloads/</guid>
+      <description>Download links Download and copy binary executable for each platform from the Download links bellow.
+ringo v0.8.5 (Windows) ringo v0.8.5 (Linux) ringo v0.8.5 (macOS) ringo v0.8.5 (UNIX) License Geospatial Information Authority of Japan Website Terms of Use (Version 2.0) [https://www.gsi.go.jp/ENGLISH/page_e30286.html] is applied to use, modification, or redistribution of the RINGO software package, except for the provision 1)-a. The user must cite the reference when the user modifies the RINGO software or combines it with other software and distributes it.</description>
+      <content>&lt;h1 id=&#34;download-links&#34;&gt;Download links&lt;/h1&gt;
+&lt;p&gt;Download and copy binary executable for each platform from the Download links bellow.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;link&#34;&gt;ringo v0.8.5 (Windows)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;link&#34;&gt;ringo v0.8.5 (Linux)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;link&#34;&gt;ringo v0.8.5 (macOS)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;link&#34;&gt;ringo v0.8.5 (UNIX)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;license&#34;&gt;License&lt;/h1&gt;
+&lt;p&gt;Geospatial Information Authority of Japan Website Terms of Use (Version 2.0) [https://www.gsi.go.jp/ENGLISH/page_e30286.html] is applied to use, modification, or redistribution of the RINGO software package, except for the provision 1)-a.
+The user must cite the reference when the user modifies the RINGO software or combines it with other software and distributes it.&lt;/p&gt;
+&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
+&lt;p&gt;Kawamoto, S., Takamatsu, N., Abe, S., RINGO: A RINEX pre-processing software for multi-GNSS data. Earth Planets Space (submitted).&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://https://github.com/satoshi-pes/ringo_testpage1/readme_doc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://https://github.com/satoshi-pes/ringo_testpage1/readme_doc/</guid>
+      <description>RINGO: RINEX pre-processing tool using Go! RINGO is a RINEX pre-processing tool capable of handling multi-GNSS data. The software is a command line based CLI tool that works on various platforms including Windows OS, macOS, Linux, Unix.
+RINGO&amp;rsquo;s command line interface (CLI) is simple to use, but fully featured to manage daily GNSS data observed by a Continuously Operating Reference Stations (CORS) network.
+Features RINEX file editing RINEX file merging Clock jump correction Quality check Ionospheric correction Generation of interactive viewer Conversion of BINEX and RTCM binaries to RINEX files Generation of a shell completion script Installatiion Prebuilt binaries for various platforms are available on this website.</description>
+      <content>&lt;h1 id=&#34;ringo-rinex-pre-processing-tool-using-go&#34;&gt;RINGO: RINEX pre-processing tool using Go!&lt;/h1&gt;
+&lt;p&gt;RINGO is a RINEX pre-processing tool capable of handling multi-GNSS data. The software is a command line based CLI tool that works on various platforms including Windows OS, macOS, Linux, Unix.&lt;/p&gt;
+&lt;p&gt;RINGO&amp;rsquo;s command line interface (CLI) is simple to use, but fully featured to manage daily GNSS data observed by a Continuously Operating Reference Stations (CORS) network.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;RINEX file editing&lt;/li&gt;
+&lt;li&gt;RINEX file merging&lt;/li&gt;
+&lt;li&gt;Clock jump correction&lt;/li&gt;
+&lt;li&gt;Quality check&lt;/li&gt;
+&lt;li&gt;Ionospheric correction&lt;/li&gt;
+&lt;li&gt;Generation of interactive viewer&lt;/li&gt;
+&lt;li&gt;Conversion of BINEX and RTCM binaries to RINEX files&lt;/li&gt;
+&lt;li&gt;Generation of a shell completion script&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installatiion&#34;&gt;Installatiion&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;Prebuilt binaries for various platforms are available on this website.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the latest release of the RINGO software from the &lt;a href=&#34;https://terras.gsi.go.jp/software/ringo.html&#34;&gt;download page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Copy the binary executable suitable to your operating system to your desired directory&lt;/li&gt;
+&lt;li&gt;Add the directory to the PATH environment variable&lt;/li&gt;
+&lt;li&gt;Add the permission to the installed executable, i.e.:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ chmod +x ringo
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;supported-platforms&#34;&gt;Supported Platforms&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;Currently supports Windows OS, macOS, Linux, UNIX (FreeBSD, OpenBSD, NetBSD, Solaris).&lt;/p&gt;
+&lt;h2 id=&#34;supported-formats&#34;&gt;Supported formats&lt;/h2&gt;
+&lt;hr&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;file format&lt;/th&gt;
+&lt;th&gt;version&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;RINEX&lt;/td&gt;
+&lt;td&gt;2.00*, 2.10, 2.11, 2.12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;3.00, 3.01, 3.02, 3.03, 3.04, 3.05&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;4.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;* Currently official RINEX version 2.00 document is not available from IGS, so RINGO support for RINEX version 2.00 may not be maintained.&lt;/p&gt;
+&lt;h3 id=&#34;supported-formats-only-for-data-conversion&#34;&gt;Supported formats only for data conversion:&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;file format&lt;/th&gt;
+&lt;th&gt;record types&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;BINEX&lt;/td&gt;
+&lt;td&gt;0x7f: GNSS observables&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0x01-0x01: GPS ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0x01-0x02: GLO ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0x01-0x03: SBAS ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0x01-0x06: QZS ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;0x01-0x14: GAL ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;file format&lt;/th&gt;
+&lt;th&gt;record types&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;RTCM&lt;/td&gt;
+&lt;td&gt;MSM7 (1077, 1087, 1097, 1117): GNSS observation data&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1019: GPS ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1020: GLO ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1044: QZS ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1046: GAL ephemeris&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;test-installation&#34;&gt;Test installation&lt;/h3&gt;
+&lt;p&gt;You can test your installation by version command:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then you will see like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo
+RINEX file pre-processing tool using Go.
+
+ringo is a program for editing, pre-processing, and quality checking RINEX files,
+also includes features such as conversion from BINEX or RTCM to RINEX format, interactive viewer etc.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;interface&#34;&gt;Interface&lt;/h3&gt;
+&lt;p&gt;RINGO is a CLI tool that provides several sub-commands. Basic interface is as follows:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo [sub-command] [flags] inputfiles &amp;gt; outputfile
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;RINGO reads all inputfiles that are given in arguments, and print data to the standard output. The basic usage is to specify input files as command line arguments and redirect it to an output file.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge rinex1 rinex2 &amp;gt; rinex_merged
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;or you can use the option &amp;ldquo;-o&amp;rdquo; to specify the output file as a command line argument.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge rinex1 rinex2 -o rinex_merged
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;See the help for each sub-command to see the full set of options available.&lt;/p&gt;
+&lt;h3 id=&#34;input-file&#34;&gt;Input file&lt;/h3&gt;
+&lt;p&gt;The inputfiles can be any of RINEX observation file, RINEX navigation file, IGS IONEX file. The file format is automatically identified from the file header.&lt;br&gt;
+The direct reading of compressed file is also supported. Acceptable formats are &amp;ldquo;compress&amp;rdquo;, &amp;ldquo;zip&amp;rdquo;, &amp;ldquo;gzip&amp;rdquo;, &amp;ldquo;bzip2&amp;rdquo; for all file format, and tar archived navigation file is also supported.
+Furthermore, hatanaka compressed file can also be accepted if &amp;ldquo;CRX2RNX&amp;rdquo; command is available in &lt;em&gt;PATH&lt;/em&gt;.&lt;br&gt;
+For example:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge rinex_obs1.o rinex_obs2.o.gz &amp;gt; rinex_merged
+$ ringo merge rinex_obs1.o rinex_obs2.d    &amp;gt; rinex_merged
+$ ringo merge rinex_nav.tar.bz2            &amp;gt; rinex_nav.p
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;show-commands-available&#34;&gt;Show commands available&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo help
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;shows&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.....
+Usage:
+  ringo [command]
+
+Available Commands:
+  bingo       Convert a BINEX file to RINEX files
+  clkcorr     Correct obs rinex by timetag smoothing
+  completion  Generate the autocompletion script for the specified shell
+  genconf     Generate a default conf file
+  help        Help about any command
+  ioncorr     Correct ionospheric delay of rinex obs file
+  merge       Merge observation or navigation RINEX files
+  qc          Quality check of a rinex obs file
+  rtcmgo      Convert a RTCM3 file to RINEX files
+  shiftcorr   Correct quarter cycle phase shift
+  version     Show version
+  viewer      Generate a HTML5-based viewer
+
+.....
+Use &amp;#34;ringo [command] --help&amp;#34; for more information about a command.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The helps for each sub-command can also be also displayed by:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo [command] --help
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For example,&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo bingo --help
+Convert a BINEX file to RINEX files
+        Currently supports 0x01 ephemerides and 0x7f-05 observations.
+
+Example:
+
+  convert a BINEX file to RINEX obs and nav files.
+  &amp;gt;&amp;gt; ringo bingo --outobs rinexobs --outnav rinexnav binex
+  .....
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;command-references&#34;&gt;Command references&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ringo&#34;&gt;ringo&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;ringo&lt;/em&gt; is the main command of the RINGO software, and each sub-command is invoked by passing the command in the first argument. There are two types of flags: global flags and command options. The global flags are commonly used for all sub-commands, and the command options are defined for each-command.&lt;/p&gt;
+&lt;h3 id=&#34;global-flags&#34;&gt;global flags&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Flag&lt;/th&gt;
+&lt;th&gt;Shorthand&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;config&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;use a config file (default is $HOME/.ringo.yaml)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;debug&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;enable debug print to stderr [default: false]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;help&lt;/td&gt;
+&lt;td&gt;-h&lt;/td&gt;
+&lt;td&gt;show help for ringo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;etime&lt;/td&gt;
+&lt;td&gt;-e&lt;/td&gt;
+&lt;td&gt;end of time window (e.g. &amp;lsquo;2017/01/01 15:00:00&amp;rsquo;) (default &amp;ldquo;2099/12/31 23:59:59&amp;rdquo;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;stime&lt;/td&gt;
+&lt;td&gt;-s&lt;/td&gt;
+&lt;td&gt;start of time window (e.g. &amp;lsquo;2017/01/01 03:00:00&amp;rsquo;) (default &amp;ldquo;1980/01/06 00:00:00&amp;rdquo;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;exclPRN&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;list of PRN to exclude (e.g. &amp;lsquo;G01,G02&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;exclSat&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;list of satsys to exclude (e.g. &amp;lsquo;G&amp;rsquo;, &amp;lsquo;REJ&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;inclPRN&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;list of PRN to include (e.g. &amp;lsquo;G01,G02&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;inclSat&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;list of satsys to include (e.g. &amp;lsquo;G&amp;rsquo;, &amp;lsquo;REJ&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;interval&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;time interval to output (seconds)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;outfile&lt;/td&gt;
+&lt;td&gt;-o&lt;/td&gt;
+&lt;td&gt;output file [default: STDOUT]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;outver&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;RINEX version to output, e.g., &amp;lsquo;4.00&amp;rsquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;sort&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;sort timetag and PRN [default: false]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;toggle&lt;/td&gt;
+&lt;td&gt;-t&lt;/td&gt;
+&lt;td&gt;help message for toggle&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;verbose&lt;/td&gt;
+&lt;td&gt;-v&lt;/td&gt;
+&lt;td&gt;enable verbose print to stderr [default: false]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;version&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;show version for ringo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;merge&#34;&gt;merge&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;merge&lt;/em&gt; merges and edits RINEX observation and navigation files. It offers basic editing features for RINEX files, including clipping, sorting, editing header, change of observation types.&lt;/p&gt;
+&lt;p&gt;The header contents of the merged file basically follow the header contents of the first file appeared in the argument. However, some header contents are automatically modified according to the contents of the merged file.&lt;/p&gt;
+&lt;p&gt;The header contents listed below are modified after merge multiple files.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Header label&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;VERSION&lt;/td&gt;
+&lt;td&gt;The output version will be the same as the version of the first file unless you choose otherwise in the option&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TIME OF FIRST OBS&lt;/td&gt;
+&lt;td&gt;automatically modified according to the data period of the merged file&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;TIME OF LAST OBS&lt;/td&gt;
+&lt;td&gt;automatically modified according to the data period of the merged file. Note that the &amp;ldquo;TIME OF LAST OBS&amp;rdquo; is an optional, but RINGO always outputs this header.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;INTERVAL&lt;/td&gt;
+&lt;td&gt;automatically modified according to the data interval. Currently RINGO determines the interval as the most frequently occurred time interval in the merged file.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;# / TYPES OF OBSERV&lt;/td&gt;
+&lt;td&gt;The obstypes will change according to the contents of the file contents after the merge.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SYS / # / OBS TYPES&lt;/td&gt;
+&lt;td&gt;Same as the &amp;ldquo;# / TYPES OF OBSERV&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;options&#34;&gt;options&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Flag&lt;/th&gt;
+&lt;th&gt;Shorthand&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;obstypes&lt;/td&gt;
+&lt;td&gt;-t&lt;/td&gt;
+&lt;td&gt;mask of obscodes (e.g. &amp;lsquo;C1C,L1C,L2X&amp;amp;R:S1C,C1P&amp;amp;E:L5X&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;help&lt;/td&gt;
+&lt;td&gt;-h&lt;/td&gt;
+&lt;td&gt;show help for merge&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.add-new-record&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;add new optional headers if possible&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.agency string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set agency&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.ante string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set antenna dE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.anth string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set antenna dH&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.antn string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set antenna dN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.antnum string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set antenna number&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.anttype string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set antenna type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.aprx string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set approximate pos x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.apry string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set approximate pos y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.aprz string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set approximate pos z&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.doi string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set DOI for data citation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.license string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set License (separator &amp;lsquo;;&amp;rsquo; for multiple lines)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.mname string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set monument name&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.mtype string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set monument type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.no-inpfiles&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;do not show input files in the header&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.observer string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set observer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.recnum string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set receiver number&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.rectype string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set receiver type&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.recver string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set receiver version&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ndash;h.stainfo string&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;set Station Information (&amp;rsquo;;&amp;rsquo; for multiple lines)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+&lt;p&gt;File merge&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge 02550010.21o 02550020.21o &amp;gt; 02550010_merged.21o
+$ ringo merge 025500[12]0.21o           &amp;gt; 02550010_merged.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Extraction of compressed file is possible.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge 02550010.21o.gz           &amp;gt; 02550010.21o
+$ ringo merge 02550010.21o.bz2          &amp;gt; 02550010.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Hatanaka compressed file can also be extracted if &amp;ldquo;CRX2RNX&amp;rdquo; is available in the $PATH.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge 02550010.21d.gz           &amp;gt; 02550010.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Creation of merged navigation file&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge ????0010.21n              &amp;gt; merg0010.21n
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Merge of tar archived navigation file provided by GSI&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge 02550010.21N.tar.gz       &amp;gt; 02550010.21p
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Set header to the file&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge 02550010.21d.gz --h.agency GSI  --h.observer Kawamoto &amp;gt; 02550010.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Clip the data between &amp;ldquo;2021/01/01 01:00:00&amp;rdquo; and &amp;ldquo;2021/01/01 02:00:00&amp;rdquo;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --stime &amp;#34;2021/01/01 01:00:00&amp;#34; --etime &amp;#34;2021/01/01 02:00:00&amp;#34; 02550010.21o &amp;gt; 02550010_clip.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Crop the data of L1 and L2 only.&lt;br&gt;
+The observation types can be specified by a comma separated string.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --obstypes &amp;#34;L1,L2&amp;#34; 02550010.21o &amp;gt; 02550010_l1l2.21o 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Clipping to the L1C data only, but only GPS clipping to L2X and L5X.&lt;br&gt;
+The observation types can be set for each satellite system individually. The setting for each satellite system can be specified by starting one of the character &amp;ldquo;GRJECS&amp;rdquo;. The settings can be combined with &amp;ldquo;&amp;amp;&amp;rdquo;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --obstypes &amp;#34;L1C&amp;amp;G:L2X,L5X&amp;#34; 02550010.21o &amp;gt; 02550010_m.21o 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Clip to data containing only specific satellite systems. The satellite systems can be a combination of &amp;ldquo;GRJECS&amp;rdquo;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --inclSat &amp;#34;G&amp;#34; 02550010.21o &amp;gt; 02550010_G.21o   # GPS only file
+$ ringo merge --inclSat &amp;#34;GJ&amp;#34; 02550010.21o &amp;gt; 02550010_GJ.21o   # GPS and QZSS
+$ ringo merge --exclSat &amp;#34;G&amp;#34; 02550010.21o &amp;gt; 02550010_noGPS.21o   # no GPS 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Clip to data containing only specific satellites. The satellites can be a comma separated string with viecle IDs.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --inclPRN &amp;#34;G01,G02&amp;#34; 02550010.21o &amp;gt; 02550010_G01G02.21o  # only G01 and G02  
+$ ringo merge --exclPRN &amp;#34;G01,G02&amp;#34; 02550010.21o &amp;gt; 02550010_G01G02.21o  # without G01 and G02
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the data interval by thinning out the data. The data interval can be set in seconds.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --interval 60  02550010.21o &amp;gt; 02550010_60s.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Sorting of the data is also possible&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo merge --sort 02550010.21o &amp;gt; 02550010_sorted.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then the sorted file looks like:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; 2021 01 01 00 00  0.0000000  0 31
+G05  21697284.266   114019997.871 7     -2085.000          46.700    21697290.6094   88846772.50546     -1624.6764
+G13  20934053.969   110009159.077 8     -1751.844          49.100    20934059.5314   85721462.52546     -1365.0704
+G14  24505154.219   128775502.796 6       613.117          39.200    24505160.5594  100344544.64143       477.7544
+G15  20366192.609   107025043.761 8       544.027          51.300    20366198.4884   83396175.49049       423.9184
+G18  21709562.883   114084519.671 7      1345.543          44.600    21709568.6414   88897037.58246      1048.4774
+G20  23553429.875   123774104.162 6      3244.309          38.400    23553435.1254   96447392.24343      2528.0314
+G23  23850618.016   125335843.457 6      3100.906          39.800    23850624.1374   97664324.07344      2416.2894
+G24  21628936.797   113660828.469 7      3088.203          44.900    21628945.8284   88566938.42948      2406.3914
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;qc&#34;&gt;qc&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;qc&lt;/em&gt; checks the quality of RINEX observation file. It summarizes the total number of epochs, the number of obsevation data, number of observations for each signal, multipath noise, cycle slips, etc.&lt;/p&gt;
+&lt;h3 id=&#34;examples-1&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo qc 02550010.21o 02550010.21n &amp;gt; qc.log
+$ ringo qc 02550010.21d.gz 02550010.21N.tar.gz &amp;gt; qc.log
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;clkcorr&#34;&gt;clkcorr&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;clkcorr&lt;/em&gt; corrects clock jump events in RINEX files. In default, the output file is aligned to regulary spaced timetags by correcting clock jumps. This behavior is similar to the &amp;ldquo;-smtt&amp;rdquo; by the teqc software. Optionally the output file can be switched to a smoothed range data. Then the msec clock jumps could be accumulated on the timetags.&lt;/p&gt;
+&lt;h3 id=&#34;examples-2&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo clkcorr        XXXXXXXX.XXo  &amp;gt;  timetagsmoothed_RINEX
+$ ringo clkcorr --smpr XXXXXXXX.XXo  &amp;gt;  rangesmoothed_RINEX
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;ioncorr&#34;&gt;ioncorr&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;ioncorr&lt;/em&gt; corrects ionospheric effects on GNSS signals. The 1st- and 2nd-orders of ionospheric corrections are implemented in RINGO &lt;em&gt;ioncorr&lt;/em&gt;. The 2nd-order correction requires IONEX file provided by IGS.&lt;/p&gt;
+&lt;h3 id=&#34;examples-3&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo ioncorr -1    02550010.21o              &amp;gt; 02550010_1.21o
+$ ringo ioncorr -1 -2 02550010.21o igsg0010.21i &amp;gt; 02550010_12.21o
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;viewer&#34;&gt;viewer&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;viewer&lt;/em&gt; generates a HTML5-based interactive viewer for RINEX observation file and quality check result.&lt;/p&gt;
+&lt;h3 id=&#34;examples-4&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo viewer          02550010.21o &amp;gt; 02550010_21o.html
+$ ringo viewer --qcmode 02550010.21o &amp;gt; 02550010_21o_qc.html
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;bingo&#34;&gt;bingo&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;bingo&lt;/em&gt; converts a BINEX file to RINEX observation and navigation files.&lt;/p&gt;
+&lt;h3 id=&#34;examples-5&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo bingo 02550010_21.bnx --outobs 02550010.21o --outnav 02550010.21p
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;rtcmgo&#34;&gt;rtcmgo&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;rtcmgo&lt;/em&gt; converts a RTCM file to RINEX observation and navigation files.&lt;/p&gt;
+&lt;h3 id=&#34;examples-6&#34;&gt;Examples&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ringo rtcmgo 02550010_21.rtcm --outobs 02550010.21o --outnav 02550010.21p
+&lt;/code&gt;&lt;/pre&gt;</content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://https://github.com/satoshi-pes/ringo_testpage1/readme_en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://https://github.com/satoshi-pes/ringo_testpage1/readme_en/</guid>
+      <description>RINGO: RINEX pre-processing tool using Go! RINGO is a CLI tool for RINEX file pre-processing. It implements several features to easily manage daily multi-GNSS data, and works on various platforms including Windows OS, macOS, Linux, and UNIX.
+(ringoのイメージ画像をここにはる)
+Developed by Satoshi Kawamoto, Naofumi Takamatsu, and Satoshi Abe @ Geospatial Information Authority of Japan.
+Features: RINEX file editing RINEX file merging Clock jump correction Quality check Ionospheric correction Generation of interactive viewer Conversion of BINEX and RTCM binaries to RINEX files Generation of a shell completion script Documentation For usage instructions see the documentation page.</description>
+      <content>&lt;h1 id=&#34;ringo-rinex-pre-processing-tool-using-go&#34;&gt;RINGO: RINEX pre-processing tool using Go!&lt;/h1&gt;
+&lt;p&gt;RINGO is a CLI tool for RINEX file pre-processing. It implements several features to easily manage daily multi-GNSS data, and works on various platforms including Windows OS, macOS, Linux, and UNIX.&lt;/p&gt;
+&lt;p&gt;(ringoのイメージ画像をここにはる)&lt;/p&gt;
+&lt;p&gt;Developed by Satoshi Kawamoto, Naofumi Takamatsu, and Satoshi Abe @ Geospatial Information Authority of Japan.&lt;/p&gt;
+&lt;h3 id=&#34;features&#34;&gt;Features:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;RINEX file editing&lt;/li&gt;
+&lt;li&gt;RINEX file merging&lt;/li&gt;
+&lt;li&gt;Clock jump correction&lt;/li&gt;
+&lt;li&gt;Quality check&lt;/li&gt;
+&lt;li&gt;Ionospheric correction&lt;/li&gt;
+&lt;li&gt;Generation of interactive viewer&lt;/li&gt;
+&lt;li&gt;Conversion of BINEX and RTCM binaries to RINEX files&lt;/li&gt;
+&lt;li&gt;Generation of a shell completion script&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;documentation&#34;&gt;Documentation&lt;/h1&gt;
+&lt;p&gt;For usage instructions &lt;a href=&#34;link-to-documentation&#34;&gt;see the documentation page&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+&lt;p&gt;Download and copy binary executable for each platform from the Download links bellow.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;link&#34;&gt;ringo v0.8.5 (Windows)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;link&#34;&gt;ringo v0.8.5 (Linux)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;link&#34;&gt;ringo v0.8.5 (macOS)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;link&#34;&gt;ringo v0.8.5 (UNIX)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;license&#34;&gt;License&lt;/h1&gt;
+&lt;p&gt;Geospatial Information Authority of Japan Website Terms of Use (Version 2.0) [https://www.gsi.go.jp/ENGLISH/page_e30286.html] is applied to use, modification, or redistribution of the RINGO software package, except for the provision 1)-a.
+The user must cite the reference when the user modifies the RINGO software or combines it with other software and distributes it.&lt;/p&gt;
+&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
+&lt;p&gt;Kawamoto, S., Takamatsu, N., Abe, S., RINGO: A RINEX preprocessing software for multi-GNSS data. Earth Planets Space (submitted).&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
