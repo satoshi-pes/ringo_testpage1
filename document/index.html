@@ -30,8 +30,8 @@
 
 
 
-  <link rel="shortcut icon" href="https://satoshi-pes.github.io/ringo_testpage1/img/theme-colors/orange.png">
-  <link rel="apple-touch-icon" href="https://satoshi-pes.github.io/ringo_testpage1/img/theme-colors/orange.png">
+  <link rel="shortcut icon" href="https://satoshi-pes.github.io/ringo_testpage1/img/theme-colors/red.png">
+  <link rel="apple-touch-icon" href="https://satoshi-pes.github.io/ringo_testpage1/img/theme-colors/red.png">
 
 
 
@@ -52,14 +52,14 @@
 <meta property="og:site_name" content="RINGO" />
 
   
-    <meta property="og:image" content="https://satoshi-pes.github.io/ringo_testpage1/img/favicon/orange.png">
+    <meta property="og:image" content="https://satoshi-pes.github.io/ringo_testpage1/img/favicon/red.png">
   
 
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 
 
-  <meta property="article:published_time" content="2019-01-25 00:00:00 &#43;0000 UTC" />
+  <meta property="article:published_time" content="2023-02-05 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -73,7 +73,7 @@
 
 
 </head>
-<body class="orange">
+<body class="red">
 
 
 <div class="container headings--one-size">
@@ -141,7 +141,7 @@
   <div class="post-meta">
     
       <time class="post-date">
-        2019-01-25 ::
+        2023-02-05 ::
         
       </time>
     
@@ -161,6 +161,25 @@
         <h1 id="ringo-rinex-pre-processing-tool-using-go">RINGO: RINEX pre-processing tool using Go!<a href="#ringo-rinex-pre-processing-tool-using-go" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <p>RINGO is a RINEX pre-processing tool capable of handling multi-GNSS data. The software is a command line based CLI tool that works on various platforms including Windows OS, macOS, Linux, Unix.</p>
 <p>RINGO&rsquo;s command line interface (CLI) is simple to use, but fully featured to manage daily GNSS data observed by a Continuously Operating Reference Stations (CORS) network.</p>
+<h2 id="table-of-contents">Table of Contents<a href="#table-of-contents" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<hr>
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#supported-platforms">Supported Platforms</a></li>
+<li><a href="#basic-usage">Basic Usage</a></li>
+<li><a href="#command-references">Command References</a>
+<ul>
+<li><a href="#merge">merge</a></li>
+<li><a href="#qc">qc</a></li>
+<li><a href="#clkcorr">clkcorr</a></li>
+<li><a href="#ioncorr">ioncorr</a></li>
+<li><a href="#viewer">viewer</a></li>
+<li><a href="#bingo">bingo</a></li>
+<li><a href="#rtcmgo">rtcmgo</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="features">Features<a href="#features" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <hr>
 <ul>
@@ -173,7 +192,7 @@
 <li>Conversion of BINEX and RTCM binaries to RINEX files</li>
 <li>Generation of a shell completion script</li>
 </ul>
-<h2 id="installatiion">Installatiion<a href="#installatiion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h2 id="installation">Installation<a href="#installation" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <hr>
 <p>Prebuilt binaries for various platforms are available on this website.</p>
 <ol>
@@ -211,7 +230,7 @@
 </tbody>
 </table>
 <p>* Currently official RINEX version 2.00 document is not available from IGS, so RINGO support for RINEX version 2.00 may not be maintained.</p>
-<h3 id="supported-formats-only-for-data-conversion">Supported formats only for data conversion:<a href="#supported-formats-only-for-data-conversion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<h3 id="supported-formats-for-data-conversion">Supported formats for data conversion:<a href="#supported-formats-for-data-conversion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
 <table>
 <thead>
 <tr>
@@ -338,8 +357,7 @@ Example:
   convert a BINEX file to RINEX obs and nav files.
   &gt;&gt; ringo bingo --outobs rinexobs --outnav rinexnav binex
   .....
-</code></pre><h3 id="heading"><a href="#heading" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
-<h2 id="command-references">Command references<a href="#command-references" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+</code></pre><h2 id="command-references">Command references<a href="#command-references" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <hr>
 <h2 id="ringo">ringo<a href="#ringo" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p><em>ringo</em> is the main command of the RINGO software, and each sub-command is invoked by passing the command in the first argument. There are two types of flags: global flags and command options. The global flags are commonly used for all sub-commands, and the command options are defined for each-command.</p>
@@ -354,82 +372,82 @@ Example:
 </thead>
 <tbody>
 <tr>
-<td>&ndash;config</td>
+<td>--config</td>
 <td></td>
 <td>use a config file (default is $HOME/.ringo.yaml)</td>
 </tr>
 <tr>
-<td>&ndash;debug</td>
+<td>--debug</td>
 <td></td>
 <td>enable debug print to stderr [default: false]</td>
 </tr>
 <tr>
-<td>&ndash;help</td>
+<td>--help</td>
 <td>-h</td>
 <td>show help for ringo</td>
 </tr>
 <tr>
-<td>&ndash;etime</td>
+<td>--etime</td>
 <td>-e</td>
 <td>end of time window (e.g. &lsquo;2017/01/01 15:00:00&rsquo;) (default &ldquo;2099/12/31 23:59:59&rdquo;)</td>
 </tr>
 <tr>
-<td>&ndash;stime</td>
+<td>--stime</td>
 <td>-s</td>
 <td>start of time window (e.g. &lsquo;2017/01/01 03:00:00&rsquo;) (default &ldquo;1980/01/06 00:00:00&rdquo;)</td>
 </tr>
 <tr>
-<td>&ndash;exclPRN</td>
+<td>--exclPRN</td>
 <td></td>
 <td>list of PRN to exclude (e.g. &lsquo;G01,G02&rsquo;) [default: &lsquo;&rsquo;]</td>
 </tr>
 <tr>
-<td>&ndash;exclSat</td>
+<td>--exclSat</td>
 <td></td>
 <td>list of satsys to exclude (e.g. &lsquo;G&rsquo;, &lsquo;REJ&rsquo;) [default: &lsquo;&rsquo;]</td>
 </tr>
 <tr>
-<td>&ndash;inclPRN</td>
+<td>--inclPRN</td>
 <td></td>
 <td>list of PRN to include (e.g. &lsquo;G01,G02&rsquo;) [default: &lsquo;&rsquo;]</td>
 </tr>
 <tr>
-<td>&ndash;inclSat</td>
+<td>--inclSat</td>
 <td></td>
 <td>list of satsys to include (e.g. &lsquo;G&rsquo;, &lsquo;REJ&rsquo;) [default: &lsquo;&rsquo;]</td>
 </tr>
 <tr>
-<td>&ndash;interval</td>
+<td>--interval</td>
 <td></td>
 <td>time interval to output (seconds)</td>
 </tr>
 <tr>
-<td>&ndash;outfile</td>
+<td>--outfile</td>
 <td>-o</td>
 <td>output file [default: STDOUT]</td>
 </tr>
 <tr>
-<td>&ndash;outver</td>
+<td>--outver</td>
 <td></td>
 <td>RINEX version to output, e.g., &lsquo;4.00&rsquo;</td>
 </tr>
 <tr>
-<td>&ndash;sort</td>
+<td>--sort</td>
 <td></td>
 <td>sort timetag and PRN [default: false]</td>
 </tr>
 <tr>
-<td>&ndash;toggle</td>
+<td>--toggle</td>
 <td>-t</td>
 <td>help message for toggle</td>
 </tr>
 <tr>
-<td>&ndash;verbose</td>
+<td>--verbose</td>
 <td>-v</td>
 <td>enable verbose print to stderr [default: false]</td>
 </tr>
 <tr>
-<td>&ndash;version</td>
+<td>--version</td>
 <td></td>
 <td>show version for ringo</td>
 </tr>
@@ -484,112 +502,112 @@ Example:
 </thead>
 <tbody>
 <tr>
-<td>&ndash;obstypes</td>
+<td>--obstypes</td>
 <td>-t</td>
 <td>mask of obscodes (e.g. &lsquo;C1C,L1C,L2X&amp;R:S1C,C1P&amp;E:L5X&rsquo;) [default: &lsquo;&rsquo;]</td>
 </tr>
 <tr>
-<td>&ndash;help</td>
+<td>--help</td>
 <td>-h</td>
 <td>show help for merge</td>
 </tr>
 <tr>
-<td>&ndash;h.add-new-record</td>
+<td>--h.add-new-record</td>
 <td></td>
 <td>add new optional headers if possible</td>
 </tr>
 <tr>
-<td>&ndash;h.agency string</td>
+<td>--h.agency string</td>
 <td></td>
 <td>set agency</td>
 </tr>
 <tr>
-<td>&ndash;h.ante string</td>
+<td>--h.ante string</td>
 <td></td>
 <td>set antenna dE</td>
 </tr>
 <tr>
-<td>&ndash;h.anth string</td>
+<td>--h.anth string</td>
 <td></td>
 <td>set antenna dH</td>
 </tr>
 <tr>
-<td>&ndash;h.antn string</td>
+<td>--h.antn string</td>
 <td></td>
 <td>set antenna dN</td>
 </tr>
 <tr>
-<td>&ndash;h.antnum string</td>
+<td>--h.antnum string</td>
 <td></td>
 <td>set antenna number</td>
 </tr>
 <tr>
-<td>&ndash;h.anttype string</td>
+<td>--h.anttype string</td>
 <td></td>
 <td>set antenna type</td>
 </tr>
 <tr>
-<td>&ndash;h.aprx string</td>
+<td>--h.aprx string</td>
 <td></td>
 <td>set approximate pos x</td>
 </tr>
 <tr>
-<td>&ndash;h.apry string</td>
+<td>--h.apry string</td>
 <td></td>
 <td>set approximate pos y</td>
 </tr>
 <tr>
-<td>&ndash;h.aprz string</td>
+<td>--h.aprz string</td>
 <td></td>
 <td>set approximate pos z</td>
 </tr>
 <tr>
-<td>&ndash;h.doi string</td>
+<td>--h.doi string</td>
 <td></td>
 <td>set DOI for data citation</td>
 </tr>
 <tr>
-<td>&ndash;h.license string</td>
+<td>--h.license string</td>
 <td></td>
 <td>set License (separator &lsquo;;&rsquo; for multiple lines)</td>
 </tr>
 <tr>
-<td>&ndash;h.mname string</td>
+<td>--h.mname string</td>
 <td></td>
 <td>set monument name</td>
 </tr>
 <tr>
-<td>&ndash;h.mtype string</td>
+<td>--h.mtype string</td>
 <td></td>
 <td>set monument type</td>
 </tr>
 <tr>
-<td>&ndash;h.no-inpfiles</td>
+<td>--h.no-inpfiles</td>
 <td></td>
 <td>do not show input files in the header</td>
 </tr>
 <tr>
-<td>&ndash;h.observer string</td>
+<td>--h.observer string</td>
 <td></td>
 <td>set observer</td>
 </tr>
 <tr>
-<td>&ndash;h.recnum string</td>
+<td>--h.recnum string</td>
 <td></td>
 <td>set receiver number</td>
 </tr>
 <tr>
-<td>&ndash;h.rectype string</td>
+<td>--h.rectype string</td>
 <td></td>
 <td>set receiver type</td>
 </tr>
 <tr>
-<td>&ndash;h.recver string</td>
+<td>--h.recver string</td>
 <td></td>
 <td>set receiver version</td>
 </tr>
 <tr>
-<td>&ndash;h.stainfo string</td>
+<td>--h.stainfo string</td>
 <td></td>
 <td>set Station Information (&rsquo;;&rsquo; for multiple lines)</td>
 </tr>
@@ -686,7 +704,7 @@ $ ringo viewer --qcmode 02550010.21o &gt; 02550010_21o_qc.html
   <div class="footer__inner">
     
       <div class="copyright">
-        <span>© 2023 Powered by <a href="http://gohugo.io">Hugo</a></span>
+        <span>© 2023 Satoshi Kawamoto :: Powered by <a href="http://gohugo.io">Hugo</a></span>
     
       <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
       </div>

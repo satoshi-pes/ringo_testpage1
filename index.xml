@@ -1,24 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hello Friend on RINGO</title>
+    <title>RINGO MainPage on RINGO</title>
     <link>https://satoshi-pes.github.io/ringo_testpage1/</link>
-    <description>Recent content in Hello Friend on RINGO</description>
+    <description>Recent content in RINGO MainPage on RINGO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://satoshi-pes.github.io/ringo_testpage1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://satoshi-pes.github.io/ringo_testpage1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Documentation</title>
       <link>https://satoshi-pes.github.io/ringo_testpage1/document/</link>
-      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://satoshi-pes.github.io/ringo_testpage1/document/</guid>
       <description>RINGO: RINEX pre-processing tool using Go! RINGO is a RINEX pre-processing tool capable of handling multi-GNSS data. The software is a command line based CLI tool that works on various platforms including Windows OS, macOS, Linux, Unix.
 RINGO&amp;rsquo;s command line interface (CLI) is simple to use, but fully featured to manage daily GNSS data observed by a Continuously Operating Reference Stations (CORS) network.
-Features RINEX file editing RINEX file merging Clock jump correction Quality check Ionospheric correction Generation of interactive viewer Conversion of BINEX and RTCM binaries to RINEX files Generation of a shell completion script Installatiion Prebuilt binaries for various platforms are available on this website.</description>
+Table of Contents Features Installation Supported Platforms Basic Usage Command References merge qc clkcorr ioncorr viewer bingo rtcmgo Features RINEX file editing RINEX file merging Clock jump correction Quality check Ionospheric correction Generation of interactive viewer Conversion of BINEX and RTCM binaries to RINEX files Generation of a shell completion script Installation Prebuilt binaries for various platforms are available on this website.</description>
       <content>&lt;h1 id=&#34;ringo-rinex-pre-processing-tool-using-go&#34;&gt;RINGO: RINEX pre-processing tool using Go!&lt;/h1&gt;
 &lt;p&gt;RINGO is a RINEX pre-processing tool capable of handling multi-GNSS data. The software is a command line based CLI tool that works on various platforms including Windows OS, macOS, Linux, Unix.&lt;/p&gt;
 &lt;p&gt;RINGO&amp;rsquo;s command line interface (CLI) is simple to use, but fully featured to manage daily GNSS data observed by a Continuously Operating Reference Stations (CORS) network.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#features&#34;&gt;Features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#installation&#34;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#supported-platforms&#34;&gt;Supported Platforms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#basic-usage&#34;&gt;Basic Usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#command-references&#34;&gt;Command References&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#merge&#34;&gt;merge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#qc&#34;&gt;qc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#clkcorr&#34;&gt;clkcorr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#ioncorr&#34;&gt;ioncorr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#viewer&#34;&gt;viewer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#bingo&#34;&gt;bingo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#rtcmgo&#34;&gt;rtcmgo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
 &lt;hr&gt;
 &lt;ul&gt;
@@ -31,7 +50,7 @@ Features RINEX file editing RINEX file merging Clock jump correction Quality che
 &lt;li&gt;Conversion of BINEX and RTCM binaries to RINEX files&lt;/li&gt;
 &lt;li&gt;Generation of a shell completion script&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;installatiion&#34;&gt;Installatiion&lt;/h2&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;Prebuilt binaries for various platforms are available on this website.&lt;/p&gt;
 &lt;ol&gt;
@@ -69,7 +88,7 @@ Features RINEX file editing RINEX file merging Clock jump correction Quality che
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;* Currently official RINEX version 2.00 document is not available from IGS, so RINGO support for RINEX version 2.00 may not be maintained.&lt;/p&gt;
-&lt;h3 id=&#34;supported-formats-only-for-data-conversion&#34;&gt;Supported formats only for data conversion:&lt;/h3&gt;
+&lt;h3 id=&#34;supported-formats-for-data-conversion&#34;&gt;Supported formats for data conversion:&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -196,8 +215,7 @@ Example:
   convert a BINEX file to RINEX obs and nav files.
   &amp;gt;&amp;gt; ringo bingo --outobs rinexobs --outnav rinexnav binex
   .....
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
-&lt;h2 id=&#34;command-references&#34;&gt;Command references&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;command-references&#34;&gt;Command references&lt;/h2&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;ringo&#34;&gt;ringo&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;ringo&lt;/em&gt; is the main command of the RINGO software, and each sub-command is invoked by passing the command in the first argument. There are two types of flags: global flags and command options. The global flags are commonly used for all sub-commands, and the command options are defined for each-command.&lt;/p&gt;
@@ -212,82 +230,82 @@ Example:
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;config&lt;/td&gt;
+&lt;td&gt;--config&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;use a config file (default is $HOME/.ringo.yaml)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;debug&lt;/td&gt;
+&lt;td&gt;--debug&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;enable debug print to stderr [default: false]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;help&lt;/td&gt;
+&lt;td&gt;--help&lt;/td&gt;
 &lt;td&gt;-h&lt;/td&gt;
 &lt;td&gt;show help for ringo&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;etime&lt;/td&gt;
+&lt;td&gt;--etime&lt;/td&gt;
 &lt;td&gt;-e&lt;/td&gt;
 &lt;td&gt;end of time window (e.g. &amp;lsquo;2017/01/01 15:00:00&amp;rsquo;) (default &amp;ldquo;2099/12/31 23:59:59&amp;rdquo;)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;stime&lt;/td&gt;
+&lt;td&gt;--stime&lt;/td&gt;
 &lt;td&gt;-s&lt;/td&gt;
 &lt;td&gt;start of time window (e.g. &amp;lsquo;2017/01/01 03:00:00&amp;rsquo;) (default &amp;ldquo;1980/01/06 00:00:00&amp;rdquo;)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;exclPRN&lt;/td&gt;
+&lt;td&gt;--exclPRN&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;list of PRN to exclude (e.g. &amp;lsquo;G01,G02&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;exclSat&lt;/td&gt;
+&lt;td&gt;--exclSat&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;list of satsys to exclude (e.g. &amp;lsquo;G&amp;rsquo;, &amp;lsquo;REJ&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;inclPRN&lt;/td&gt;
+&lt;td&gt;--inclPRN&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;list of PRN to include (e.g. &amp;lsquo;G01,G02&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;inclSat&lt;/td&gt;
+&lt;td&gt;--inclSat&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;list of satsys to include (e.g. &amp;lsquo;G&amp;rsquo;, &amp;lsquo;REJ&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;interval&lt;/td&gt;
+&lt;td&gt;--interval&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;time interval to output (seconds)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;outfile&lt;/td&gt;
+&lt;td&gt;--outfile&lt;/td&gt;
 &lt;td&gt;-o&lt;/td&gt;
 &lt;td&gt;output file [default: STDOUT]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;outver&lt;/td&gt;
+&lt;td&gt;--outver&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;RINEX version to output, e.g., &amp;lsquo;4.00&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;sort&lt;/td&gt;
+&lt;td&gt;--sort&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;sort timetag and PRN [default: false]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;toggle&lt;/td&gt;
+&lt;td&gt;--toggle&lt;/td&gt;
 &lt;td&gt;-t&lt;/td&gt;
 &lt;td&gt;help message for toggle&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;verbose&lt;/td&gt;
+&lt;td&gt;--verbose&lt;/td&gt;
 &lt;td&gt;-v&lt;/td&gt;
 &lt;td&gt;enable verbose print to stderr [default: false]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;version&lt;/td&gt;
+&lt;td&gt;--version&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;show version for ringo&lt;/td&gt;
 &lt;/tr&gt;
@@ -342,112 +360,112 @@ Example:
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;obstypes&lt;/td&gt;
+&lt;td&gt;--obstypes&lt;/td&gt;
 &lt;td&gt;-t&lt;/td&gt;
 &lt;td&gt;mask of obscodes (e.g. &amp;lsquo;C1C,L1C,L2X&amp;amp;R:S1C,C1P&amp;amp;E:L5X&amp;rsquo;) [default: &amp;lsquo;&amp;rsquo;]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;help&lt;/td&gt;
+&lt;td&gt;--help&lt;/td&gt;
 &lt;td&gt;-h&lt;/td&gt;
 &lt;td&gt;show help for merge&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.add-new-record&lt;/td&gt;
+&lt;td&gt;--h.add-new-record&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;add new optional headers if possible&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.agency string&lt;/td&gt;
+&lt;td&gt;--h.agency string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set agency&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.ante string&lt;/td&gt;
+&lt;td&gt;--h.ante string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set antenna dE&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.anth string&lt;/td&gt;
+&lt;td&gt;--h.anth string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set antenna dH&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.antn string&lt;/td&gt;
+&lt;td&gt;--h.antn string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set antenna dN&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.antnum string&lt;/td&gt;
+&lt;td&gt;--h.antnum string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set antenna number&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.anttype string&lt;/td&gt;
+&lt;td&gt;--h.anttype string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set antenna type&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.aprx string&lt;/td&gt;
+&lt;td&gt;--h.aprx string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set approximate pos x&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.apry string&lt;/td&gt;
+&lt;td&gt;--h.apry string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set approximate pos y&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.aprz string&lt;/td&gt;
+&lt;td&gt;--h.aprz string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set approximate pos z&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.doi string&lt;/td&gt;
+&lt;td&gt;--h.doi string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set DOI for data citation&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.license string&lt;/td&gt;
+&lt;td&gt;--h.license string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set License (separator &amp;lsquo;;&amp;rsquo; for multiple lines)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.mname string&lt;/td&gt;
+&lt;td&gt;--h.mname string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set monument name&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.mtype string&lt;/td&gt;
+&lt;td&gt;--h.mtype string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set monument type&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.no-inpfiles&lt;/td&gt;
+&lt;td&gt;--h.no-inpfiles&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;do not show input files in the header&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.observer string&lt;/td&gt;
+&lt;td&gt;--h.observer string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set observer&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.recnum string&lt;/td&gt;
+&lt;td&gt;--h.recnum string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set receiver number&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.rectype string&lt;/td&gt;
+&lt;td&gt;--h.rectype string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set receiver type&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.recver string&lt;/td&gt;
+&lt;td&gt;--h.recver string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set receiver version&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&amp;ndash;h.stainfo string&lt;/td&gt;
+&lt;td&gt;--h.stainfo string&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;set Station Information (&amp;rsquo;;&amp;rsquo; for multiple lines)&lt;/td&gt;
 &lt;/tr&gt;
@@ -532,11 +550,12 @@ $ ringo viewer --qcmode 02550010.21o &amp;gt; 02550010_21o_qc.html
     <item>
       <title>Downloads</title>
       <link>https://satoshi-pes.github.io/ringo_testpage1/downloads/</link>
-      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://satoshi-pes.github.io/ringo_testpage1/downloads/</guid>
       <description>Download links Download and copy binary executable for each platform from the Download links bellow.
-ringo v0.8.5 (Windows) ringo v0.8.5 (Linux) ringo v0.8.5 (macOS) ringo v0.8.5 (UNIX) License Geospatial Information Authority of Japan Website Terms of Use (Version 2.0) [https://www.gsi.go.jp/ENGLISH/page_e30286.html] is applied to use, modification, or redistribution of the RINGO software package, except for the provision 1)-a. The user must cite the reference when the user modifies the RINGO software or combines it with other software and distributes it.</description>
+ringo v0.8.5 (Windows) ringo v0.8.5 (Linux) ringo v0.8.5 (macOS) ringo v0.8.5 (UNIX) Reference Kawamoto, S., Takamatsu, N., Abe, S., RINGO: A RINEX pre-processing software for multi-GNSS data. Earth Planets Space (submitted).
+License Geospatial Information Authority of Japan Website Terms of Use (Version 2.0) [https://www.gsi.go.jp/ENGLISH/page_e30286.html] is applied to use, modification, or redistribution of the RINGO software package, except for the provision 1)-a.</description>
       <content>&lt;h1 id=&#34;download-links&#34;&gt;Download links&lt;/h1&gt;
 &lt;p&gt;Download and copy binary executable for each platform from the Download links bellow.&lt;/p&gt;
 &lt;ul&gt;
@@ -545,11 +564,11 @@ ringo v0.8.5 (Windows) ringo v0.8.5 (Linux) ringo v0.8.5 (macOS) ringo v0.8.5 (U
 &lt;li&gt;&lt;a href=&#34;link&#34;&gt;ringo v0.8.5 (macOS)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;link&#34;&gt;ringo v0.8.5 (UNIX)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
+&lt;p&gt;Kawamoto, S., Takamatsu, N., Abe, S., RINGO: A RINEX pre-processing software for multi-GNSS data. Earth Planets Space (submitted).&lt;/p&gt;
 &lt;h1 id=&#34;license&#34;&gt;License&lt;/h1&gt;
 &lt;p&gt;Geospatial Information Authority of Japan Website Terms of Use (Version 2.0) [https://www.gsi.go.jp/ENGLISH/page_e30286.html] is applied to use, modification, or redistribution of the RINGO software package, except for the provision 1)-a.
 The user must cite the reference when the user modifies the RINGO software or combines it with other software and distributes it.&lt;/p&gt;
-&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
-&lt;p&gt;Kawamoto, S., Takamatsu, N., Abe, S., RINGO: A RINEX pre-processing software for multi-GNSS data. Earth Planets Space (submitted).&lt;/p&gt;
 </content>
     </item>
     
@@ -561,7 +580,7 @@ The user must cite the reference when the user modifies the RINGO software or co
       <guid>https://satoshi-pes.github.io/ringo_testpage1/readme_doc/</guid>
       <description>RINGO: RINEX pre-processing tool using Go! RINGO is a RINEX pre-processing tool capable of handling multi-GNSS data. The software is a command line based CLI tool that works on various platforms including Windows OS, macOS, Linux, Unix.
 RINGO&amp;rsquo;s command line interface (CLI) is simple to use, but fully featured to manage daily GNSS data observed by a Continuously Operating Reference Stations (CORS) network.
-Features RINEX file editing RINEX file merging Clock jump correction Quality check Ionospheric correction Generation of interactive viewer Conversion of BINEX and RTCM binaries to RINEX files Generation of a shell completion script Installatiion Prebuilt binaries for various platforms are available on this website.</description>
+Features RINEX file editing RINEX file merging Clock jump correction Quality check Ionospheric correction Generation of interactive viewer Conversion of BINEX and RTCM binaries to RINEX files Generation of a shell completion script Installation Prebuilt binaries for various platforms are available on this website.</description>
       <content>&lt;h1 id=&#34;ringo-rinex-pre-processing-tool-using-go&#34;&gt;RINGO: RINEX pre-processing tool using Go!&lt;/h1&gt;
 &lt;p&gt;RINGO is a RINEX pre-processing tool capable of handling multi-GNSS data. The software is a command line based CLI tool that works on various platforms including Windows OS, macOS, Linux, Unix.&lt;/p&gt;
 &lt;p&gt;RINGO&amp;rsquo;s command line interface (CLI) is simple to use, but fully featured to manage daily GNSS data observed by a Continuously Operating Reference Stations (CORS) network.&lt;/p&gt;
@@ -577,7 +596,7 @@ Features RINEX file editing RINEX file merging Clock jump correction Quality che
 &lt;li&gt;Conversion of BINEX and RTCM binaries to RINEX files&lt;/li&gt;
 &lt;li&gt;Generation of a shell completion script&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;installatiion&#34;&gt;Installatiion&lt;/h2&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;Prebuilt binaries for various platforms are available on this website.&lt;/p&gt;
 &lt;ol&gt;
